@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sean Botha Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ----------- Header ---------- -->
+
+    <div id="header">
+        <div class="container">
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer Student</p>
+                <h1>Hi, I am <span>Sean Botha</span><br>from Belgium Campus ITversity</h1>
+            </div>
+        </div>
+    </div>
+
+<div class="content">
+
+<!-- ----------- About ---------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/stand_rbg.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About me</h1>
+                    <p>I am a third-year student, studying Software
+                        Engineering at Belgium iTversity. I am
+                        logically orientated and I love working with numbers
+                        and solving problems. I like to encourage and help people around
+                        me when I see they are struggling.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Languages')">Languages</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                            <p class="tab-links" onclick="opentab('General')">General</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Languages">
+                            <ul>
+                                <li><span>C#</span><br>Visual Studio<br>OOP</li>
+                                <li><span>Python</span><br>Visual Studio Code<br>Machine Learning</li>
+                                <li><span>HTML/CSS</span><br>Visual Studio Code<br>NodeJS<br>Express</li>
+                                <li><span>Javascript</span><br>Visual Studio Code</li>
+                                <li><span>Java</span><br>Netbeans IDE<br>OOP</li>
+                                <li><span>SQL</span><br>MS Access<br>MySQL<br>MongoDB</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>December 2022</span><br>Waiter and Barista at Green Arch</li>
+                                <li><span>December 2022</span><br>Till packer at Santa's Warehouse</li>
+                                <li><span>June 2023 - December 2023</span><br>Software Tester at Subskribo</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2022 - Current</span><br>Bachelor of Computing at Belgium iTversity</li>
+                                <li><span>2021</span><br>National Senior Certificate (IEB) at Curro Roodeplaat</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="General">
+                            <ul>
+                                <li><span>Languages</span><br>English<br>Afrikaans</li>
+                                <li><span>Driver's License</span><br>Manual</li>
+                                <li><span>Car</span><br>Reliable</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ----------- Portfolio ---------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/first_year.png" alt="First Year">
+                    <div class="layer">
+                        <h3><a href="https://github.com/stars/Hooded005/lists/first-year-belgium">First Year <i class="fas fa-external-link-alt"></i></a></h3>
+                        <ul>Subjects
+                            <li>Database Development 181</li>
+                            <li>Programming 182</li>
+                            <li>Web Programming 181</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/second_year.png" alt="Second Year">
+                    <div class="layer">
+                        <h3><a href="https://github.com/stars/Hooded005/lists/second-year-belgium">Second Year <i class="fas fa-external-link-alt"></i></a></h3>
+                        <ul>Subjects
+                            <li>Database Development 281</li>
+                            <li>Programming 282</li>
+                            <li>Web Programming 281</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/third_year.png" alt="Third Year">
+                    <div class="layer">
+                        <h3><a href="https://github.com/stars/Hooded005/lists/third-year-belgium">Third Year <i class="fas fa-external-link-alt"></i></a></h3>
+                        <ul>Subjects
+                            <li>Programming 381</li>
+                            <li>Web Programming 381</li>
+                            <li>Machine Learning 382</li>
+                            <li>Year Project</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ----------- Contact ---------- -->
+
+    <div id="contact">
+        <div class="container">
+            <h1 class="subtitle">Contact</h1>
+            <h4>Phone</h4>
+            <a class="contact" href="tel:+27833544743"><i class="fa-solid fa-phone"></i> 083 354 4743</a><br><br>
+            <h4>Mail</h4>
+            <a class="contact" href="mailto:seanbotha2003@gmail.com"><i class="fa-solid fa-envelope"></i> seanbotha2003@gmail.com</a><br><br>
+            <h4>LinkedIn</h4>
+            <a class="contact" href="https://www.linkedin.com/in/sean-botha-091040258/"><i class="fa-brands fa-linkedin"></i> LinkedIn/Sean-Botha</a>
+        </div>
+    </div>
+</div>
+
+    <script>
+        window.onscroll = function() {stickyFunction()};
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function stickyFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            }
+            else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/27b74e7d77.js" crossorigin="anonymous"></script>
+</body>
+</html>
